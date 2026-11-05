@@ -1,0 +1,110 @@
+{
+  "id": 3,
+  "title": "投资估算与预算",
+  "eyebrow": "SCOPE → COST → DECISION",
+  "start": 45,
+  "duration": 20,
+  "shots": [
+    {
+      "shot_id": "S03-SH07",
+      "scene_id": "S03",
+      "start_s": 45,
+      "end_s": 53,
+      "frames_30fps": [
+        1350,
+        1590
+      ],
+      "title": "投资构成",
+      "medium": "2D",
+      "framing": "机场模型缩小到左侧，费用卡片右侧",
+      "lens_or_projection": "正交",
+      "movement": "土建/航站楼/机电/专用设备等条块累计增长",
+      "transition_in": "推拉切换",
+      "visual_logic": "示例估算20亿美元，不把比例作为真实项目数据",
+      "voiceover_zh": "咨询机构依据工程规模、设计和市场价格编制投资估算。本案例暂按二十亿美元测算。",
+      "subtitle_zh": "示例投资估算 20亿美元（虚构）",
+      "source_assets": [
+        "cost_breakdown"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S03-SH08",
+      "scene_id": "S03",
+      "start_s": 53,
+      "end_s": 60,
+      "frames_30fps": [
+        1590,
+        1800
+      ],
+      "title": "融资决策",
+      "medium": "2D",
+      "framing": "预算表特写",
+      "lens_or_projection": "正交",
+      "movement": "估算文件移交业主，出现融资与预算审批印章",
+      "transition_in": "文件接力",
+      "visual_logic": "投资估算用以决策；避免出现已签固定总价",
+      "voiceover_zh": "估算文件交给业主，用于预算审批、融资安排和投资决策，并随着项目推进更新。",
+      "subtitle_zh": "投资估算 → 预算与融资决策",
+      "source_assets": [
+        "cost_breakdown"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S03-SH09",
+      "scene_id": "S03",
+      "start_s": 60,
+      "end_s": 65,
+      "frames_30fps": [
+        1800,
+        1950
+      ],
+      "title": "价格区分",
+      "medium": "2D",
+      "framing": "三列价格卡片",
+      "lens_or_projection": "正交",
+      "movement": "初步估算/合同中标价/结算金额三列依次点亮",
+      "transition_in": "卡片联动",
+      "visual_logic": "不宣称三者金额相等",
+      "voiceover_zh": "初步估算、中标合同价和最终结算价，是三个不同数字，不能直接画上等号。",
+      "subtitle_zh": "估算 ≠ 中标合同价 ≠ 最终结算价",
+      "source_assets": [
+        "cost_breakdown"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    }
+  ],
+  "costs": [
+    1.5,
+    3.5,
+    5,
+    3,
+    2.2,
+    1.2,
+    1.1,
+    2.5
+  ],
+  "cost_labels": [
+    "土建及公共设施",
+    "跑道及机坪",
+    "航站楼建筑",
+    "机电系统",
+    "机场专用设备",
+    "机场信息系统",
+    "咨询管理费用",
+    "预备费"
+  ],
+  "content": {
+    "finance_flow": [
+      "预算审批|Budget Approval",
+      "融资安排|Financing",
+      "投资决策|Investment Decision"
+    ],
+    "price_stages": [
+      "初步投资估算|Initial Cost Estimate",
+      "中标合同价|Awarded Contract Price",
+      "最终结算价|Final Account"
+    ]
+  }
+}

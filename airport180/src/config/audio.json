@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "alignmentVerified": false,
+  "file": "audio/narration.wav",
+  "status": "No TTS credential configured; captions are editorial only."
+}

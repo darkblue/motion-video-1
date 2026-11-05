@@ -1,0 +1,67 @@
+{
+  "id": "equipment_brand_approval",
+  "title": "设备品牌与材料技术报审",
+  "steps": [
+    {
+      "id": "A1",
+      "actor": "supplier",
+      "action": "准备技术资料/产品数据/制造商资质/符合性矩阵",
+      "next": [
+        "A2"
+      ]
+    },
+    {
+      "id": "A2",
+      "actor": "contractor",
+      "action": "整合提交Material Submittal",
+      "next": [
+        "A3"
+      ]
+    },
+    {
+      "id": "A3",
+      "actor": "engineer",
+      "action": "核对合同规范、接口与技术符合性",
+      "decision": {
+        "pass": "A4",
+        "revise": "A2"
+      }
+    },
+    {
+      "id": "A4",
+      "actor": "owner",
+      "action": "合同要求时确认指定事项（不是所有报审必经）",
+      "conditional": true,
+      "next": [
+        "A5"
+      ]
+    },
+    {
+      "id": "A5",
+      "actor": "contractor",
+      "action": "按获批准的技术提交资料组织采购",
+      "next": [
+        "A6"
+      ]
+    },
+    {
+      "id": "A6",
+      "actor": "supplier",
+      "action": "制造/FAT/交货/现场配合",
+      "next": [
+        "A7"
+      ]
+    },
+    {
+      "id": "A7",
+      "actor": "engineer",
+      "action": "按合同执行检查、测试及记录",
+      "next": []
+    }
+  ],
+  "hold_points": [
+    "未经适当审批不得以品牌名代替技术符合性审核",
+    "如建议偏离合同/批准品牌名单则按变更程序处理",
+    "工程师权限以专用合同条件和授权范围为准"
+  ]
+}

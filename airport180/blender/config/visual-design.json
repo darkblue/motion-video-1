@@ -1,0 +1,17 @@
+{
+  "resolution": [
+    1920,
+    1080
+  ],
+  "samples": 1,
+  "threads": 3,
+  "building_heights_m": {
+    "terminal": 90,
+    "tower": 100,
+    "parking": 24,
+    "ground_transport": 20
+  },
+  "terminal_roof_rise_m": 8,
+  "coordinate_mapping": "Blender X = source x; Blender Y = -source y; Blender Z = elevation in meters. No translation, rescaling, or facility rearrangement.",
+  "scope": "Three director high-risk tests, plus a separate reassembly technical proof. Cameras are sourced exclusively from camera-keyframes.json; master layout comes from airport-project.json."
+}

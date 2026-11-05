@@ -1,0 +1,32 @@
+[
+  {
+    "path": "public/fonts/NotoSansCJK-Regular.ttc",
+    "bytes": 19484784,
+    "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+  },
+  {
+    "path": "public/fonts/LICENSE.txt",
+    "bytes": 14712,
+    "sha256": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b"
+  },
+  {
+    "path": "public/blender/reset.mp4",
+    "bytes": 1222166,
+    "sha256": "a90db8e33cfb2f4a0645ce7c6de060fa1a9d6e34509fd06385f2aaef70faefff"
+  },
+  {
+    "path": "public/blender/planning.mp4",
+    "bytes": 1029032,
+    "sha256": "67139b83dd0ea2efab419c3312552a7fb5795ce06c465b2c1399b084076c006b"
+  },
+  {
+    "path": "public/blender/bim.mp4",
+    "bytes": 1660595,
+    "sha256": "8e37198d617eef7e93b90baf7ce57e5ea72df28f841f18cef0a1ef682667c210"
+  },
+  {
+    "path": "blender/blender/director-master.blend",
+    "bytes": 4875964,
+    "sha256": "2426362266751db28f7fac2e509efc19aa6a1182473bd703bed721b273704ca4"
+  }
+]

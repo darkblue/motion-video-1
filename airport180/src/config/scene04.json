@@ -1,0 +1,115 @@
+{
+  "id": 4,
+  "title": "招标与合同关系",
+  "eyebrow": "WHO CONTRACTS WITH WHOM?",
+  "start": 65,
+  "duration": 30,
+  "shots": [
+    {
+      "shot_id": "S04-SH10",
+      "scene_id": "S04",
+      "start_s": 65,
+      "end_s": 73,
+      "frames_30fps": [
+        1950,
+        2190
+      ],
+      "title": "招标模式",
+      "medium": "2D",
+      "framing": "项目组织图俯视",
+      "lens_or_projection": "正交",
+      "movement": "Design-Bid-Build居中，EPC/DB作为右侧对照",
+      "transition_in": "平移",
+      "visual_logic": "本片后续只采用DBB；切换展示不改变责任分工",
+      "voiceover_zh": "本片主线是设计、招标、施工的传统模式。设计建造或EPC，则由承包商承担更多设计与施工责任。",
+      "subtitle_zh": "主线：Design–Bid–Build",
+      "source_assets": [
+        "contracts.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S04-SH11",
+      "scene_id": "S04",
+      "start_s": 73,
+      "end_s": 82,
+      "frames_30fps": [
+        2190,
+        2460
+      ],
+      "title": "招投标",
+      "medium": "2D",
+      "framing": "流程横向跟拍",
+      "lens_or_projection": "正交",
+      "movement": "资格预审→发标→投标→评标→授标逐节点亮",
+      "transition_in": "节点接力",
+      "visual_logic": "施工总包和工程师/监理招标可分别组织",
+      "voiceover_zh": "业主按采购规则组织资格预审、发标、投标、评标与授标，比较技术、报价和履约能力。",
+      "subtitle_zh": "发标 → 投标 → 评标 → 授标",
+      "source_assets": [
+        "contracts.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S04-SH12",
+      "scene_id": "S04",
+      "start_s": 82,
+      "end_s": 90,
+      "frames_30fps": [
+        2460,
+        2700
+      ],
+      "title": "合同关系",
+      "medium": "2D",
+      "framing": "固定业主居上，三家单位居下",
+      "lens_or_projection": "正交",
+      "movement": "只绘制owner→designer/engineer/contractor合同实线",
+      "transition_in": "图表展开",
+      "visual_logic": "无engineer与contractor合同线；采购合同为contractor→supplier",
+      "voiceover_zh": "业主分别与设计顾问、工程师和施工总承包商签约。工程师依授权管理合同，并非施工合同的签约相对方。",
+      "subtitle_zh": "谁与谁签约？合同关系必须明确",
+      "source_assets": [
+        "contracts.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S04-SH13",
+      "scene_id": "S04",
+      "start_s": 90,
+      "end_s": 95,
+      "frames_30fps": [
+        2700,
+        2850
+      ],
+      "title": "文件与合同区别",
+      "medium": "2D",
+      "framing": "合同图特写",
+      "lens_or_projection": "正交",
+      "movement": "总包→工程师虚线文件箭头；工程师→总包审查反馈",
+      "transition_in": "颜色匹配",
+      "visual_logic": "提交线不得绘制为合同线",
+      "voiceover_zh": "总包提交图纸和技术文件，工程师审查并反馈。文件流与管理权限，不能误画成施工合同关系。",
+      "subtitle_zh": "合同线 ≠ 审批线",
+      "source_assets": [
+        "contracts.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    }
+  ],
+  "content": {
+    "dbb_flow": [
+      "设计|Design",
+      "招标|Bid",
+      "施工|Build"
+    ],
+    "tender_flow": [
+      "资格预审|Prequalification",
+      "发布招标文件|Tender Documents",
+      "技术与商务投标|Technical / Financial Bid",
+      "技术与价格评审|Evaluation",
+      "授标与签约|Award / Contract"
+    ]
+  }
+}

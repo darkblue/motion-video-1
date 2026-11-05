@@ -1,0 +1,11 @@
+**/node_modules
+**/renders/
+**/reports/
+**/runtime/
+**/__pycache__/
+**/*.blend
+**/*.blend1
+**/frames-*/
+**/deliverables/
+**/blender/remotion/
+**/public/audio/
