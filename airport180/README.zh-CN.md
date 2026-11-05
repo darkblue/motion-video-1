@@ -97,5 +97,3 @@ bash scripts/rebuild-blender.sh
 ## 检查与导出
 
 `reports/source-checks.json`检查时间轴、投资合计、合同边和固定工程数据；`reports/ui-audit.json`检查真实截图DOM；`renders/verification.json`检查5400帧、180秒、分辨率、全片解码及各场景动态样本；`renders/playback-check.json`记录Chromium实际播放与跳转。`reports/baseline-risk-audit.json`是此前同一Blender主模型的检查结果，作为来源证据保留，不冒充本次完整视频的重新建模验收。
-
-GitHub存源码和渲染必需资源；最终MP4与含Blender的完整工程ZIP交付Google Drive。若云端上传被权限阻止，保留本地输出，按上述渲染命令可导出；不会把未上传的文件声称为已有云端链接。
