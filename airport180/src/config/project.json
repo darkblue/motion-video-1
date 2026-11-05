@@ -1,0 +1,14 @@
+{
+  "existing_capacity": 24000000,
+  "planning_target": 60000000,
+  "investment_usd": 2000000000,
+  "case_description": "虚构的发展中国家新建机场案例",
+  "airport_label": "新建机场",
+  "geometry_source": "input/airport-project.json",
+  "geometry_capacity_is_not_planning_target": true,
+  "no_actual_capacity_validation": true,
+  "source_original_capacity": 15000000,
+  "no_bottom_disclaimer": true,
+  "no_timecode": true,
+  "no_global_progress": true
+}

@@ -1,0 +1,97 @@
+{
+  "id": 6,
+  "title": "设备品牌与技术确认",
+  "eyebrow": "SPECIFICATION → PROCUREMENT",
+  "start": 125,
+  "duration": 20,
+  "shots": [
+    {
+      "shot_id": "S06-SH18",
+      "scene_id": "S06",
+      "start_s": 125,
+      "end_s": 133,
+      "frames_30fps": [
+        3750,
+        3990
+      ],
+      "title": "供应商报审",
+      "medium": "2D",
+      "framing": "设备图标与资料卡片",
+      "lens_or_projection": "正交",
+      "movement": "技术参数/厂商资质/符合性矩阵汇聚到总包",
+      "transition_in": "文件汇聚",
+      "visual_logic": "使用approval-workflow.json A1/A2，设备为示例航显系统",
+      "voiceover_zh": "采购前，供应商与总包准备技术数据、制造商建议、材料报审、符合性对照表和施工详图。",
+      "subtitle_zh": "Material Submittal 技术报审",
+      "source_assets": [
+        "workflow.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S06-SH19",
+      "scene_id": "S06",
+      "start_s": 133,
+      "end_s": 140,
+      "frames_30fps": [
+        3990,
+        4200
+      ],
+      "title": "审核分支",
+      "medium": "2D",
+      "framing": "工程师审查决策菱形",
+      "lens_or_projection": "正交",
+      "movement": "审查→合格前进/不符合退回A2，黄色提示条件性业主确认",
+      "transition_in": "路径高亮",
+      "visual_logic": "按JSON A3分支；owner A4标注if required",
+      "voiceover_zh": "总包先审核，工程师按规范审查；不符合就退回修改。是否需要业主确认，取决于合同权限。",
+      "subtitle_zh": "审查通过 / 退回修改",
+      "source_assets": [
+        "workflow.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S06-SH20",
+      "scene_id": "S06",
+      "start_s": 140,
+      "end_s": 145,
+      "frames_30fps": [
+        4200,
+        4350
+      ],
+      "title": "采购前置",
+      "medium": "2D",
+      "framing": "采购订单与生产线",
+      "lens_or_projection": "正交",
+      "movement": "条件满足→采购合同→制造图标；不自动默认批准",
+      "transition_in": "状态交接",
+      "visual_logic": "业主确认仅在合同要求时执行",
+      "voiceover_zh": "满足合同、技术规范、合格制造商名单和授权条件后，才能进入相应采购和生产。",
+      "subtitle_zh": "按合同权限确认后采购",
+      "source_assets": [
+        "workflow.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    }
+  ],
+  "content": {
+    "submittals": [
+      "材料报审|Material Submittal",
+      "技术数据表|Technical Datasheet",
+      "符合性对照表|Compliance Matrix",
+      "制造商建议|Manufacturer Proposal",
+      "施工详图|Shop Drawing"
+    ],
+    "review_flow": [
+      "供应商建议|Supplier Proposal",
+      "总包审核|Contractor Check",
+      "工程师审查|Engineer Review"
+    ],
+    "procurement_flow": [
+      "符合性确认|Compliance Confirmed",
+      "采购合同|Purchase Order",
+      "制造与工厂测试|Manufacture / FAT"
+    ]
+  }
+}

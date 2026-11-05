@@ -1,0 +1,141 @@
+{
+  "id": 2,
+  "title": "咨询、选址与总体规划",
+  "eyebrow": "PLAN BEFORE YOU BUILD",
+  "start": 20,
+  "duration": 25,
+  "shots": [
+    {
+      "shot_id": "S02-SH04",
+      "scene_id": "S02",
+      "start_s": 20,
+      "end_s": 27,
+      "frames_30fps": [
+        600,
+        810
+      ],
+      "title": "选址与需求",
+      "medium": "2D",
+      "framing": "规划地图俯视",
+      "lens_or_projection": "正交",
+      "movement": "三个候选地块出现，聚焦最终示意机场用地",
+      "transition_in": "地图擦除",
+      "visual_logic": "场址非真实地理位置；不虚构城市建筑靠近跑道",
+      "voiceover_zh": "业主聘请专业咨询与设计机构，研究需求预测、选址、空域、环境和地面交通。",
+      "subtitle_zh": "需求预测 · 选址研究",
+      "source_assets": [
+        "masterplan.svg"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S02-SH05",
+      "scene_id": "S02",
+      "start_s": 27,
+      "end_s": 36,
+      "frames_30fps": [
+        810,
+        1080
+      ],
+      "title": "总平面生长",
+      "medium": "3D",
+      "framing": "机场总体俯视→等距鸟瞰",
+      "lens_or_projection": "正交俯视转正交45°",
+      "movement": "严格按JSON坐标，跑道→平行滑行道→连接滑行道→机坪→航站楼显现",
+      "transition_in": "同形元素变换",
+      "visual_logic": "必须是唯一机场模型；只控制显隐，禁止重建对象",
+      "voiceover_zh": "总体规划把跑道、滑行道、机坪和航站楼组织起来，协调空侧与陆侧的空间关系。",
+      "subtitle_zh": "机场总体规划 Airport Master Plan",
+      "source_assets": [
+        "masterplan.svg"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "ORTHO",
+        "start": {
+          "target_xyz_m": [
+            2750,
+            1700,
+            0
+          ],
+          "azimuth_deg": 0,
+          "elevation_deg": 90,
+          "ortho_scale_m": 5300
+        },
+        "end": {
+          "target_xyz_m": [
+            2720,
+            1740,
+            0
+          ],
+          "azimuth_deg": -35,
+          "elevation_deg": 55,
+          "ortho_scale_m": 4700
+        },
+        "easing": "easeInOutCubic"
+      }
+    },
+    {
+      "shot_id": "S02-SH06",
+      "scene_id": "S02",
+      "start_s": 36,
+      "end_s": 45,
+      "frames_30fps": [
+        1080,
+        1350
+      ],
+      "title": "设计成果",
+      "medium": "2D+3D",
+      "framing": "机场模型左、成果文件右",
+      "lens_or_projection": "正交",
+      "movement": "模型保持位置不变；FS/MP/Concept/Preliminary四张文件沿时间轴出现",
+      "transition_in": "分层叠加",
+      "visual_logic": "成果文件名称与不同项目工作阶段不强行一一对应",
+      "voiceover_zh": "可行性研究、总体规划、概念设计和初步设计，逐步明确建设规模与技术方案。",
+      "subtitle_zh": "可研 · 总体规划 · 初步设计",
+      "source_assets": [
+        "masterplan.svg"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "ORTHO",
+        "start": {
+          "target_xyz_m": [
+            2720,
+            1740,
+            0
+          ],
+          "azimuth_deg": -35,
+          "elevation_deg": 55,
+          "ortho_scale_m": 4700
+        },
+        "end": {
+          "target_xyz_m": [
+            2700,
+            1840,
+            0
+          ],
+          "azimuth_deg": -35,
+          "elevation_deg": 55,
+          "ortho_scale_m": 4900
+        }
+      }
+    }
+  ],
+  "content": {
+    "planning_facilities": [
+      "跑道 Runway",
+      "平行滑行道",
+      "连接滑行道",
+      "机坪 Apron",
+      "航站楼 Terminal",
+      "塔台与陆侧设施"
+    ],
+    "deliverables": [
+      "可行性研究|Feasibility Study",
+      "机场总体规划|Airport Master Plan",
+      "概念设计|Concept Design",
+      "初步设计|Preliminary Design"
+    ]
+  }
+}

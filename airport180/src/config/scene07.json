@@ -1,0 +1,151 @@
+{
+  "id": 7,
+  "title": "施工建设与系统集成",
+  "eyebrow": "BUILD. CONNECT. VERIFY.",
+  "start": 145,
+  "duration": 25,
+  "shots": [
+    {
+      "shot_id": "S07-SH21",
+      "scene_id": "S07",
+      "start_s": 145,
+      "end_s": 153,
+      "frames_30fps": [
+        4350,
+        4590
+      ],
+      "title": "工程并行",
+      "medium": "3D",
+      "framing": "固定机场俯视全景",
+      "lens_or_projection": "正交45°",
+      "movement": "底层飞行区施工与上层航站楼施工在同一时间轴并行",
+      "transition_in": "时间轴叠加",
+      "visual_logic": "以施工阶段控制显隐；不用镜头随机移动设施",
+      "voiceover_zh": "土方、跑道、航站楼钢结构、屋面幕墙和机电安装，按照计划交叉推进，并接受质量检查。",
+      "subtitle_zh": "飞行区 · 航站楼并行建设",
+      "source_assets": [
+        "masterplan.svg",
+        "construction_phases.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "ORTHO",
+        "start": {
+          "target_xyz_m": [
+            2700,
+            1700,
+            0
+          ],
+          "azimuth_deg": -30,
+          "elevation_deg": 60,
+          "ortho_scale_m": 5100
+        },
+        "end": {
+          "target_xyz_m": [
+            2700,
+            1700,
+            0
+          ],
+          "azimuth_deg": -30,
+          "elevation_deg": 52,
+          "ortho_scale_m": 4750
+        }
+      }
+    },
+    {
+      "shot_id": "S07-SH22",
+      "scene_id": "S07",
+      "start_s": 153,
+      "end_s": 161,
+      "frames_30fps": [
+        4590,
+        4830
+      ],
+      "title": "安装系统",
+      "medium": "3D+2D",
+      "framing": "航站楼剖面与设备节点",
+      "lens_or_projection": "正交",
+      "movement": "屋面完成后再出现设备，BHS/航显/安检等依次定位",
+      "transition_in": "剖面擦除",
+      "visual_logic": "系统部署节点固定；不要让设备飘在跑道上",
+      "voiceover_zh": "设备进场后，行李、航显、安检与旅客处理设备安装到位，信息系统也开始部署。",
+      "subtitle_zh": "设备安装 · 系统集成",
+      "source_assets": [
+        "masterplan.svg",
+        "construction_phases.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "ORTHO",
+        "start": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            0
+          ],
+          "azimuth_deg": -38,
+          "elevation_deg": 40,
+          "ortho_scale_m": 2000
+        },
+        "end": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            0
+          ],
+          "azimuth_deg": -38,
+          "elevation_deg": 40,
+          "ortho_scale_m": 1750
+        }
+      }
+    },
+    {
+      "shot_id": "S07-SH23",
+      "scene_id": "S07",
+      "start_s": 161,
+      "end_s": 170,
+      "frames_30fps": [
+        4830,
+        5100
+      ],
+      "title": "联调联试",
+      "medium": "2D",
+      "framing": "AODB中心向各系统数据流",
+      "lens_or_projection": "正交",
+      "movement": "AODB节点出现，FIDS/BHS/BRS/DCS接口逐条高亮，最后测试通过",
+      "transition_in": "线条生长",
+      "visual_logic": "示意数据关系非完整接口规范；测试不能等同最终许可",
+      "voiceover_zh": "机场运行数据库通过约定接口连接航显、行李、离港和安防系统。单机、系统与跨系统联调逐级验证。",
+      "subtitle_zh": "测试与调试 Testing & Commissioning",
+      "source_assets": [
+        "masterplan.svg",
+        "construction_phases.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    }
+  ],
+  "content": {
+    "gantt_groups": [
+      "飞行区土建",
+      "航站楼主体",
+      "机电与设备",
+      "运营准备 ORAT"
+    ],
+    "construction_steps": [
+      "土方与地基",
+      "跑道与机坪",
+      "钢结构吊装",
+      "屋面、幕墙及机电"
+    ],
+    "installation_steps": [
+      "机电安装|MEP Installation",
+      "机场设备进场|Airport Equipment",
+      "信息系统部署|IT Deployment"
+    ],
+    "test_flow": [
+      "单机测试|Component Tests",
+      "系统测试|System Tests",
+      "跨系统联调|Integrated Tests"
+    ]
+  }
+}

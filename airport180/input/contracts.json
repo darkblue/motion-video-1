@@ -1,0 +1,101 @@
+{
+  "delivery_model": "Design-Bid-Build (illustrative)",
+  "actors": [
+    {
+      "id": "gov",
+      "role": "政府/主管部门",
+      "zh": "批准、监管、必要融资决定"
+    },
+    {
+      "id": "owner",
+      "role": "机场业主",
+      "zh": "发包、投资控制、项目决策"
+    },
+    {
+      "id": "designer",
+      "role": "咨询/设计公司",
+      "zh": "规划、设计、审查支持"
+    },
+    {
+      "id": "engineer",
+      "role": "工程师/监理咨询",
+      "zh": "依合同审查、监督与合同管理"
+    },
+    {
+      "id": "contractor",
+      "role": "施工总承包商",
+      "zh": "采购、施工、分包协调、施工组织及施工相关深化"
+    },
+    {
+      "id": "supplier",
+      "role": "设备供应商",
+      "zh": "设备设计资料、制造、交货、现场支持"
+    },
+    {
+      "id": "regulator",
+      "role": "航空监管机构",
+      "zh": "合规检查、许可/批准"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gov",
+      "to": "owner",
+      "type": "authorization",
+      "label": "项目批准/治理"
+    },
+    {
+      "from": "owner",
+      "to": "designer",
+      "type": "contract",
+      "label": "设计咨询合同"
+    },
+    {
+      "from": "owner",
+      "to": "engineer",
+      "type": "contract",
+      "label": "工程师/监理服务合同"
+    },
+    {
+      "from": "owner",
+      "to": "contractor",
+      "type": "contract",
+      "label": "施工总承包合同"
+    },
+    {
+      "from": "contractor",
+      "to": "supplier",
+      "type": "purchase_or_subcontract",
+      "label": "采购/分包合同"
+    },
+    {
+      "from": "contractor",
+      "to": "engineer",
+      "type": "submission",
+      "label": "图纸/材料/设备报审"
+    },
+    {
+      "from": "engineer",
+      "to": "contractor",
+      "type": "review_response",
+      "label": "批复/意见/退回"
+    },
+    {
+      "from": "engineer",
+      "to": "owner",
+      "type": "report",
+      "label": "监督报告/需业主决定事项"
+    },
+    {
+      "from": "owner",
+      "to": "regulator",
+      "type": "regulatory_filing",
+      "label": "许可/验收申报"
+    }
+  ],
+  "explicit_non_edges": [
+    "engineer-contractor contract",
+    "owner-supplier contract unless direct procurement",
+    "engineer approving supplier beyond delegated authority"
+  ]
+}

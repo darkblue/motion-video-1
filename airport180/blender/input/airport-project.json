@@ -1,0 +1,826 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "NIA-15M",
+    "name_zh": "新岚国际机场（虚构）",
+    "name_en": "New Horizon International Airport",
+    "fictional": true,
+    "annual_passengers_phase1": 15000000,
+    "indicative_investment_usd": 2000000000,
+    "indicative_duration_months": 60,
+    "delivery_model": "Design-Bid-Build / Employer-designed construction",
+    "caveat": "Illustrative educational geometry; NOT engineering-compliant airport design. Verify ICAO Annex 14/local rules and aircraft design group before engineering use."
+  },
+  "coordinate_system": {
+    "unit": "m",
+    "origin": "northwest of conceptual site",
+    "x_axis": "east",
+    "y_axis": "south (screen down)",
+    "scene_bounds": [
+      0,
+      0,
+      5600,
+      3400
+    ],
+    "north_up": true,
+    "scale_note": "Conceptual only; SVG viewBox uses same coordinates."
+  },
+  "objects": [
+    {
+      "id": "runway",
+      "kind": "runway",
+      "label": "跑道 Runway",
+      "geometry": {
+        "type": "rect",
+        "x": 1050,
+        "y": 995,
+        "width": 3200,
+        "height": 45
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_RUNWAY"
+    },
+    {
+      "id": "runway_protection_envelope",
+      "kind": "illustrative_clearance",
+      "label": "跑道周边示意留空范围（非标准边界）",
+      "geometry": {
+        "type": "rect",
+        "x": 850,
+        "y": 805,
+        "width": 3600,
+        "height": 425
+      },
+      "phase": "PLANNING",
+      "collection": "REFERENCE_ONLY",
+      "not_design_standard": true
+    },
+    {
+      "id": "parallel_taxiway",
+      "kind": "taxiway",
+      "label": "平行滑行道 Parallel Taxiway",
+      "geometry": {
+        "type": "rect",
+        "x": 1140,
+        "y": 1350,
+        "width": 3030,
+        "height": 25
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_TAXIWAY"
+    },
+    {
+      "id": "link_west",
+      "kind": "taxiway",
+      "label": "西端连接滑行道",
+      "geometry": {
+        "type": "rect",
+        "x": 1275,
+        "y": 1040,
+        "width": 25,
+        "height": 310
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_TAXIWAY"
+    },
+    {
+      "id": "link_east",
+      "kind": "taxiway",
+      "label": "东端连接滑行道",
+      "geometry": {
+        "type": "rect",
+        "x": 3875,
+        "y": 1040,
+        "width": 25,
+        "height": 310
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_TAXIWAY"
+    },
+    {
+      "id": "apron_connector_1",
+      "kind": "taxiway",
+      "label": "机坪连接滑行道A",
+      "geometry": {
+        "type": "rect",
+        "x": 1790,
+        "y": 1375,
+        "width": 25,
+        "height": 355
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_TAXIWAY"
+    },
+    {
+      "id": "apron_connector_2",
+      "kind": "taxiway",
+      "label": "机坪连接滑行道B",
+      "geometry": {
+        "type": "rect",
+        "x": 3440,
+        "y": 1375,
+        "width": 25,
+        "height": 355
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_TAXIWAY"
+    },
+    {
+      "id": "apron_taxilane",
+      "kind": "taxilane",
+      "label": "机坪滑行通道",
+      "geometry": {
+        "type": "rect",
+        "x": 1750,
+        "y": 1720,
+        "width": 1740,
+        "height": 25
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_APRON"
+    },
+    {
+      "id": "apron",
+      "kind": "apron",
+      "label": "停机坪 Apron",
+      "geometry": {
+        "type": "rect",
+        "x": 1670,
+        "y": 1745,
+        "width": 1900,
+        "height": 300
+      },
+      "phase": "AIRFIELD",
+      "collection": "AIRFIELD_APRON"
+    },
+    {
+      "id": "terminal",
+      "kind": "terminal",
+      "label": "T1航站楼 Terminal",
+      "geometry": {
+        "type": "rect",
+        "x": 1900,
+        "y": 2055,
+        "width": 1420,
+        "height": 340
+      },
+      "phase": "TERMINAL",
+      "collection": "BUILDING_TERMINAL"
+    },
+    {
+      "id": "tower",
+      "kind": "tower",
+      "label": "塔台 ATC Tower",
+      "geometry": {
+        "type": "circle",
+        "cx": 3730,
+        "cy": 2280,
+        "r": 65
+      },
+      "phase": "SUPPORT",
+      "collection": "BUILDING_SUPPORT"
+    },
+    {
+      "id": "landside_road",
+      "kind": "landside_road",
+      "label": "陆侧交通道路",
+      "geometry": {
+        "type": "polyline",
+        "points": [
+          [
+            1450,
+            2635
+          ],
+          [
+            3950,
+            2635
+          ]
+        ],
+        "stroke_width": 100
+      },
+      "phase": "LANDSIDE",
+      "collection": "LANDSIDE_ROADS"
+    },
+    {
+      "id": "parking",
+      "kind": "parking",
+      "label": "停车楼 Parking",
+      "geometry": {
+        "type": "rect",
+        "x": 2060,
+        "y": 2740,
+        "width": 530,
+        "height": 300
+      },
+      "phase": "LANDSIDE",
+      "collection": "LANDSIDE_PARKING"
+    },
+    {
+      "id": "ground_transport",
+      "kind": "transport_hub",
+      "label": "地面交通中心 GTC",
+      "geometry": {
+        "type": "rect",
+        "x": 2790,
+        "y": 2740,
+        "width": 530,
+        "height": 300
+      },
+      "phase": "LANDSIDE",
+      "collection": "LANDSIDE_BUILDINGS"
+    }
+  ],
+  "parking_stands": [
+    {
+      "id": "S01",
+      "x": 2005,
+      "y": 1890,
+      "orientation_deg": 0,
+      "aircraft_class": "conceptual narrowbody only"
+    },
+    {
+      "id": "S02",
+      "x": 2215,
+      "y": 1890,
+      "orientation_deg": 0,
+      "aircraft_class": "conceptual narrowbody only"
+    },
+    {
+      "id": "S03",
+      "x": 2425,
+      "y": 1890,
+      "orientation_deg": 0,
+      "aircraft_class": "conceptual narrowbody only"
+    },
+    {
+      "id": "S04",
+      "x": 2635,
+      "y": 1890,
+      "orientation_deg": 0,
+      "aircraft_class": "conceptual narrowbody only"
+    },
+    {
+      "id": "S05",
+      "x": 2845,
+      "y": 1890,
+      "orientation_deg": 0,
+      "aircraft_class": "conceptual narrowbody only"
+    },
+    {
+      "id": "S06",
+      "x": 3055,
+      "y": 1890,
+      "orientation_deg": 0,
+      "aircraft_class": "conceptual narrowbody only"
+    }
+  ],
+  "aircraft_demo_route": {
+    "id": "arrival_to_stand",
+    "type": "illustrative_taxi_centerline",
+    "points": [
+      [
+        3940,
+        1018
+      ],
+      [
+        3887,
+        1018
+      ],
+      [
+        3887,
+        1362
+      ],
+      [
+        3452,
+        1362
+      ],
+      [
+        3452,
+        1732
+      ],
+      [
+        3015,
+        1732
+      ],
+      [
+        3015,
+        1830
+      ]
+    ],
+    "note": "Schematic route only; do not use to generate literal turn-radius or mark a real operational taxi route; link to stand needs additional approved apron guidance."
+  },
+  "no_build_rules": [
+    {
+      "id": "NB1",
+      "kind": "runway_envelope",
+      "polygon": [
+        [
+          850,
+          805
+        ],
+        [
+          4450,
+          805
+        ],
+        [
+          4450,
+          1230
+        ],
+        [
+          850,
+          1230
+        ]
+      ],
+      "rule": "No buildings inside conceptual envelope; not an ICAO/FAA-defined surface."
+    },
+    {
+      "id": "NB2",
+      "kind": "flightpath_visual",
+      "polygon": [
+        [
+          0,
+          600
+        ],
+        [
+          850,
+          805
+        ],
+        [
+          850,
+          1230
+        ],
+        [
+          0,
+          1430
+        ]
+      ],
+      "rule": "Do not draw skyscrapers along depicted approach/departure direction"
+    },
+    {
+      "id": "NB3",
+      "kind": "flightpath_visual",
+      "polygon": [
+        [
+          4450,
+          805
+        ],
+        [
+          5600,
+          600
+        ],
+        [
+          5600,
+          1430
+        ],
+        [
+          4450,
+          1230
+        ]
+      ],
+      "rule": "Do not draw skyscrapers along depicted approach/departure direction"
+    }
+  ],
+  "construction_phases": [
+    {
+      "id": "P0",
+      "name": "政府议案及项目立项",
+      "months": [
+        0,
+        6
+      ],
+      "depends_on": [],
+      "deliverables": [
+        "发展需求论证",
+        "项目启动决定"
+      ]
+    },
+    {
+      "id": "P1",
+      "name": "可研、选址、总体规划与概念设计",
+      "months": [
+        4,
+        16
+      ],
+      "depends_on": [
+        "P0"
+      ],
+      "deliverables": [
+        "需求预测",
+        "选址与净空初筛",
+        "总体规划",
+        "初步投资估算"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "融资安排、审批及招标准备",
+      "months": [
+        12,
+        24
+      ],
+      "depends_on": [
+        "P1"
+      ],
+      "deliverables": [
+        "投资/融资决定",
+        "招标包划分",
+        "初设及招标技术规格"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "施工总包及工程师招标",
+      "months": [
+        20,
+        30
+      ],
+      "depends_on": [
+        "P2"
+      ],
+      "deliverables": [
+        "技术商务评审",
+        "授标及合同"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "深化设计/施工图/报审",
+      "months": [
+        27,
+        47
+      ],
+      "depends_on": [
+        "P3"
+      ],
+      "deliverables": [
+        "IFC施工图",
+        "Shop Drawings",
+        "BIM协调",
+        "设备报审"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "场地、飞行区及建筑施工",
+      "months": [
+        30,
+        53
+      ],
+      "depends_on": [
+        "P3"
+      ],
+      "deliverables": [
+        "土方地基",
+        "跑道滑行道机坪",
+        "航站楼主体",
+        "机电基础设施"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "设备采购、安装及系统集成",
+      "months": [
+        38,
+        56
+      ],
+      "depends_on": [
+        "P4"
+      ],
+      "deliverables": [
+        "合格厂家/材料确认",
+        "采购交付",
+        "BHS/CUPPS/FIDS/AODB等安装",
+        "系统接口联调"
+      ]
+    },
+    {
+      "id": "P7",
+      "name": "测试、试运行准备及监管批准",
+      "months": [
+        52,
+        60
+      ],
+      "depends_on": [
+        "P5",
+        "P6"
+      ],
+      "deliverables": [
+        "测试与调试",
+        "综合联调",
+        "人员培训",
+        "ORAT试运行",
+        "移交与监管批准"
+      ]
+    }
+  ],
+  "contracts": {
+    "delivery_model": "Design-Bid-Build (illustrative)",
+    "actors": [
+      {
+        "id": "gov",
+        "role": "政府/主管部门",
+        "zh": "批准、监管、必要融资决定"
+      },
+      {
+        "id": "owner",
+        "role": "机场业主",
+        "zh": "发包、投资控制、项目决策"
+      },
+      {
+        "id": "designer",
+        "role": "咨询/设计公司",
+        "zh": "规划、设计、审查支持"
+      },
+      {
+        "id": "engineer",
+        "role": "工程师/监理咨询",
+        "zh": "依合同审查、监督与合同管理"
+      },
+      {
+        "id": "contractor",
+        "role": "施工总承包商",
+        "zh": "采购、施工、分包协调、施工组织及施工相关深化"
+      },
+      {
+        "id": "supplier",
+        "role": "设备供应商",
+        "zh": "设备设计资料、制造、交货、现场支持"
+      },
+      {
+        "id": "regulator",
+        "role": "航空监管机构",
+        "zh": "合规检查、许可/批准"
+      }
+    ],
+    "edges": [
+      {
+        "from": "gov",
+        "to": "owner",
+        "type": "authorization",
+        "label": "项目批准/治理"
+      },
+      {
+        "from": "owner",
+        "to": "designer",
+        "type": "contract",
+        "label": "设计咨询合同"
+      },
+      {
+        "from": "owner",
+        "to": "engineer",
+        "type": "contract",
+        "label": "工程师/监理服务合同"
+      },
+      {
+        "from": "owner",
+        "to": "contractor",
+        "type": "contract",
+        "label": "施工总承包合同"
+      },
+      {
+        "from": "contractor",
+        "to": "supplier",
+        "type": "purchase_or_subcontract",
+        "label": "采购/分包合同"
+      },
+      {
+        "from": "contractor",
+        "to": "engineer",
+        "type": "submission",
+        "label": "图纸/材料/设备报审"
+      },
+      {
+        "from": "engineer",
+        "to": "contractor",
+        "type": "review_response",
+        "label": "批复/意见/退回"
+      },
+      {
+        "from": "engineer",
+        "to": "owner",
+        "type": "report",
+        "label": "监督报告/需业主决定事项"
+      },
+      {
+        "from": "owner",
+        "to": "regulator",
+        "type": "regulatory_filing",
+        "label": "许可/验收申报"
+      }
+    ],
+    "explicit_non_edges": [
+      "engineer-contractor contract",
+      "owner-supplier contract unless direct procurement",
+      "engineer approving supplier beyond delegated authority"
+    ]
+  },
+  "submittal_workflow": {
+    "id": "equipment_brand_approval",
+    "title": "设备品牌与材料技术报审",
+    "steps": [
+      {
+        "id": "A1",
+        "actor": "supplier",
+        "action": "准备技术资料/产品数据/制造商资质/符合性矩阵",
+        "next": [
+          "A2"
+        ]
+      },
+      {
+        "id": "A2",
+        "actor": "contractor",
+        "action": "整合提交Material Submittal",
+        "next": [
+          "A3"
+        ]
+      },
+      {
+        "id": "A3",
+        "actor": "engineer",
+        "action": "核对合同规范、接口与技术符合性",
+        "decision": {
+          "pass": "A4",
+          "revise": "A2"
+        }
+      },
+      {
+        "id": "A4",
+        "actor": "owner",
+        "action": "合同要求时确认指定事项（不是所有报审必经）",
+        "conditional": true,
+        "next": [
+          "A5"
+        ]
+      },
+      {
+        "id": "A5",
+        "actor": "contractor",
+        "action": "按获批准的技术提交资料组织采购",
+        "next": [
+          "A6"
+        ]
+      },
+      {
+        "id": "A6",
+        "actor": "supplier",
+        "action": "制造/FAT/交货/现场配合",
+        "next": [
+          "A7"
+        ]
+      },
+      {
+        "id": "A7",
+        "actor": "engineer",
+        "action": "按合同执行检查、测试及记录",
+        "next": []
+      }
+    ],
+    "hold_points": [
+      "未经适当审批不得以品牌名代替技术符合性审核",
+      "如建议偏离合同/批准品牌名单则按变更程序处理",
+      "工程师权限以专用合同条件和授权范围为准"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "time_s": [
+        0,
+        20
+      ],
+      "focus": "机场需求增长与议案",
+      "visual": "城市和既有机场容量图；政府签署项目启动文件",
+      "assets": [
+        "city_schematic",
+        "approval_card"
+      ],
+      "rules": [
+        "旧机场与新建机场分屏，不把城市画进新机场跑道区"
+      ]
+    },
+    {
+      "id": "S02",
+      "time_s": [
+        20,
+        45
+      ],
+      "focus": "咨询设计与总体规划",
+      "visual": "固定机场总平面逐层出现",
+      "assets": [
+        "masterplan.svg"
+      ],
+      "rules": [
+        "所有设施使用同一坐标系"
+      ]
+    },
+    {
+      "id": "S03",
+      "time_s": [
+        45,
+        65
+      ],
+      "focus": "投资估算",
+      "visual": "建设投资分解和估算→批准",
+      "assets": [
+        "cost_breakdown"
+      ],
+      "rules": [
+        "初始估算不是施工中标价"
+      ]
+    },
+    {
+      "id": "S04",
+      "time_s": [
+        65,
+        95
+      ],
+      "focus": "总包与工程师招标",
+      "visual": "发标→投标→评标→授标→合同关系图",
+      "assets": [
+        "contracts.json"
+      ],
+      "rules": [
+        "合同线与业务审批线区分"
+      ]
+    },
+    {
+      "id": "S05",
+      "time_s": [
+        95,
+        125
+      ],
+      "focus": "深化设计/BIM",
+      "visual": "同一航站楼多专业图层拆分与碰撞协调",
+      "assets": [
+        "bim_layers.json"
+      ],
+      "rules": [
+        "模型分层仅表示信息可视化"
+      ]
+    },
+    {
+      "id": "S06",
+      "time_s": [
+        125,
+        145
+      ],
+      "focus": "品牌和设备审查",
+      "visual": "材料报审状态机",
+      "assets": [
+        "workflow.json"
+      ],
+      "rules": [
+        "条件性业主确认、退回重报、不得自动批准"
+      ]
+    },
+    {
+      "id": "S07",
+      "time_s": [
+        145,
+        170
+      ],
+      "focus": "施工/专用系统联调",
+      "visual": "机场同一模型按施工阶段显现",
+      "assets": [
+        "masterplan.svg",
+        "construction_phases.json"
+      ],
+      "rules": [
+        "阶段交叉而非完全串行",
+        "专用系统部署必须在必要基础设施具备后"
+      ]
+    },
+    {
+      "id": "S08",
+      "time_s": [
+        170,
+        180
+      ],
+      "focus": "ORAT与交付",
+      "visual": "测试清单→演练→批准→开航",
+      "assets": [
+        "commissioning_checklist"
+      ],
+      "rules": [
+        "竣工≠可以立即开航"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "FAA AC 150/5300-13B",
+      "url": "https://www.faa.gov/airports/resources/advisory_circulars/index.cfm/go/document.current/documentnumber/150_530",
+      "use": "general layout concepts; illustrative drawing not conformant"
+    },
+    {
+      "title": "FIDIC Red Book 2017",
+      "url": "https://www.fidic.org/books/construction-contract-2nd-ed-2017-red-book?id=1654",
+      "use": "Employer-designed construction contractual framework"
+    },
+    {
+      "title": "Houston Airport System ORAT design standards",
+      "url": "https://downloads.ctfassets.net/fwldykjthzos/55yVy5F8V5k1O9nMaLzEwv/4e72d921f4f9af6cec9b81d1d71084ff/HAS_Design_Manual.pdf",
+      "use": "ORAT distinction from physical completion"
+    }
+  ]
+}

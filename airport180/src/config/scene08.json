@@ -1,0 +1,93 @@
+{
+  "id": 8,
+  "title": "验收、ORAT与投运",
+  "eyebrow": "FROM VISION TO TAKEOFF",
+  "start": 170,
+  "duration": 10,
+  "shots": [
+    {
+      "shot_id": "S08-SH24",
+      "scene_id": "S08",
+      "start_s": 170,
+      "end_s": 176,
+      "frames_30fps": [
+        5100,
+        5280
+      ],
+      "title": "ORAT与批准",
+      "medium": "2D+3D",
+      "framing": "航站楼运行准备看板",
+      "lens_or_projection": "正交",
+      "movement": "测试/流程演练/人员培训/监管批准按序显示",
+      "transition_in": "检查项收束",
+      "visual_logic": "审批是法定要求的条件节点，不由工程师代替监管",
+      "voiceover_zh": "ORAT提前启动运营准备、人员培训和旅客流程演练。测试验收、监管批准与移交，是不同的投运门槛。",
+      "subtitle_zh": "ORAT · 监管批准",
+      "source_assets": [
+        "commissioning_checklist"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    },
+    {
+      "shot_id": "S08-SH25",
+      "scene_id": "S08",
+      "start_s": 176,
+      "end_s": 180,
+      "frames_30fps": [
+        5280,
+        5400
+      ],
+      "title": "开航收尾",
+      "medium": "3D",
+      "framing": "机场最终等距全景",
+      "lens_or_projection": "正交45°",
+      "movement": "航站楼点亮，飞机仅在跑道指定直线段示意移动，标题渐入",
+      "transition_in": "淡出到片尾",
+      "visual_logic": "不生成未经校核的降落进近路径或滑行转弯",
+      "voiceover_zh": "达到启用条件后，新建机场正式投运。从建设愿景，到正式起航。",
+      "subtitle_zh": "从建设愿景到正式起航",
+      "source_assets": [
+        "commissioning_checklist"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "ORTHO",
+        "start": {
+          "target_xyz_m": [
+            2700,
+            1750,
+            0
+          ],
+          "azimuth_deg": -34,
+          "elevation_deg": 54,
+          "ortho_scale_m": 4700
+        },
+        "end": {
+          "target_xyz_m": [
+            2700,
+            1750,
+            0
+          ],
+          "azimuth_deg": -34,
+          "elevation_deg": 57,
+          "ortho_scale_m": 5300
+        }
+      }
+    }
+  ],
+  "content": {
+    "opening_gates": [
+      "测试与调试|Testing & Commissioning",
+      "运营准备与机场投运|ORAT",
+      "监管批准|Regulatory Approval",
+      "移交|Handover",
+      "机场启用|Airport Opening"
+    ],
+    "passenger_journey": [
+      "值机",
+      "托运",
+      "安检",
+      "登机"
+    ]
+  }
+}

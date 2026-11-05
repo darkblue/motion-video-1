@@ -1,0 +1,188 @@
+{
+  "id": 5,
+  "title": "深化设计与多专业协同",
+  "eyebrow": "COORDINATE BEFORE CONSTRUCTION",
+  "start": 95,
+  "duration": 30,
+  "shots": [
+    {
+      "shot_id": "S05-SH14",
+      "scene_id": "S05",
+      "start_s": 95,
+      "end_s": 102,
+      "frames_30fps": [
+        2850,
+        3060
+      ],
+      "title": "深化设计入口",
+      "medium": "3D",
+      "framing": "由机场鸟瞰推进到既有航站楼",
+      "lens_or_projection": "正交45°→透视50mm",
+      "movement": "镜头向航站楼移动，其他机场对象保留固定世界坐标",
+      "transition_in": "镜头连续运动",
+      "visual_logic": "只移动摄像机，不平移航站楼位置",
+      "voiceover_zh": "合同签署后，各方按职责推进详细设计。业主设计方负责主体设计，总包负责施工详图及约定设计。",
+      "subtitle_zh": "设计深化 Detailed Design",
+      "source_assets": [
+        "bim_layers.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "PERSPECTIVE",
+        "lens_mm": 50,
+        "start": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            0
+          ],
+          "distance_m": 2800,
+          "azimuth_deg": -38,
+          "elevation_deg": 43
+        },
+        "end": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            0
+          ],
+          "distance_m": 1200,
+          "azimuth_deg": -38,
+          "elevation_deg": 38
+        }
+      }
+    },
+    {
+      "shot_id": "S05-SH15",
+      "scene_id": "S05",
+      "start_s": 102,
+      "end_s": 112,
+      "frames_30fps": [
+        3060,
+        3360
+      ],
+      "title": "BIM图层",
+      "medium": "3D",
+      "framing": "航站楼等距近景",
+      "lens_or_projection": "正交45°",
+      "movement": "结构→建筑→暖通→电气→弱电分层抬升；每层对应唯一集合",
+      "transition_in": "层级展开",
+      "visual_logic": "图层仅可视化，归位坐标严格相同",
+      "voiceover_zh": "航站楼需要协调建筑、结构、暖通、电气、给排水、消防、行李和信息系统。BIM帮助多专业一起检查。",
+      "subtitle_zh": "BIM多专业协同",
+      "source_assets": [
+        "bim_layers.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "ORTHO",
+        "start": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            100
+          ],
+          "azimuth_deg": -40,
+          "elevation_deg": 42,
+          "ortho_scale_m": 1900
+        },
+        "end": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            100
+          ],
+          "azimuth_deg": -40,
+          "elevation_deg": 42,
+          "ortho_scale_m": 1650
+        }
+      }
+    },
+    {
+      "shot_id": "S05-SH16",
+      "scene_id": "S05",
+      "start_s": 112,
+      "end_s": 120,
+      "frames_30fps": [
+        3360,
+        3600
+      ],
+      "title": "碰撞与协调",
+      "medium": "3D",
+      "framing": "管线局部特写",
+      "lens_or_projection": "透视65mm",
+      "movement": "一处风管与桥架冲突标红，调整预先设计的桥架局部路径",
+      "transition_in": "焦点推近",
+      "visual_logic": "只对演示构件做可控调整；不能随机穿楼板",
+      "voiceover_zh": "当风管与桥架发生碰撞，设计团队调整局部路径，保留接口位置，复查后消除冲突。",
+      "subtitle_zh": "碰撞检查 Clash Detection",
+      "source_assets": [
+        "bim_layers.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟",
+      "camera_spec": {
+        "camera_type": "PERSPECTIVE",
+        "lens_mm": 65,
+        "start": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            70
+          ],
+          "distance_m": 600,
+          "azimuth_deg": -40,
+          "elevation_deg": 30
+        },
+        "end": {
+          "target_xyz_m": [
+            2610,
+            2225,
+            70
+          ],
+          "distance_m": 320,
+          "azimuth_deg": -40,
+          "elevation_deg": 25
+        },
+        "note": "局部BIM构件坐标以实际航站楼子模型为准，不能使用世界坐标随机生成冲突点"
+      }
+    },
+    {
+      "shot_id": "S05-SH17",
+      "scene_id": "S05",
+      "start_s": 120,
+      "end_s": 125,
+      "frames_30fps": [
+        3600,
+        3750
+      ],
+      "title": "图纸审查",
+      "medium": "2D+3D",
+      "framing": "BIM模型回收，旁侧图纸卡片",
+      "lens_or_projection": "正交",
+      "movement": "分层回归→图纸提交→批注→修订→审查状态",
+      "transition_in": "模型到图纸匹配",
+      "visual_logic": "审查后图纸不代表全部工程可直接开工",
+      "voiceover_zh": "图纸提交、审查、批注、修订再报。信息不清时发出RFI；审查不免除提交方的合同责任。",
+      "subtitle_zh": "提交 → 审查 → 修订",
+      "source_assets": [
+        "bim_layers.json"
+      ],
+      "camera_rule": "3D视图坐标与airport-project.json一致；2D布局沿用contract/workflow图的逻辑；避免真实航行程序的伪精确模拟"
+    }
+  ],
+  "content": {
+    "review_flow": [
+      "提交|Submission",
+      "审查批注|Review / Comments",
+      "修订再报|Revise / Resubmit",
+      "审查状态|Review Status"
+    ],
+    "bim_layers": [
+      "结构 Structure",
+      "建筑 Architecture",
+      "暖通 HVAC",
+      "电气 Electrical",
+      "弱电 ELV"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "airport-construction-180",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "render": "node scripts/render.mjs",
+    "test": "node --import tsx scripts/test.ts",
+    "stills": "node scripts/stills.mjs",
+    "editorial": "node scripts/export-editorial.mjs",
+    "verify": "node scripts/verify-video.mjs && node scripts/check-playback.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.373",
+    "@remotion/bundler": "4.0.373",
+    "@remotion/renderer": "4.0.373",
+    "remotion": "4.0.373",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "@types/node": "22.15.0",
+    "typescript": "5.8.3",
+    "tsx": "4.19.4"
+  }
+}

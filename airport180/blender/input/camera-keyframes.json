@@ -1,0 +1,194 @@
+{
+  "coordinate_system": "airport-project.json world coordinates (x east,y south,z up); camera target xyz meters; azimuth=east axis reference, elevation above horizon",
+  "note": "以下数值为导演预设取景，Blender导入后根据模型高度及画幅调整相机距离；正交镜头不使用mm焦距",
+  "cameras": {
+    "S02-SH05": {
+      "camera_type": "ORTHO",
+      "start": {
+        "target_xyz_m": [
+          2750,
+          1700,
+          0
+        ],
+        "azimuth_deg": 0,
+        "elevation_deg": 90,
+        "ortho_scale_m": 5300
+      },
+      "end": {
+        "target_xyz_m": [
+          2720,
+          1740,
+          0
+        ],
+        "azimuth_deg": -35,
+        "elevation_deg": 55,
+        "ortho_scale_m": 4700
+      },
+      "easing": "easeInOutCubic"
+    },
+    "S02-SH06": {
+      "camera_type": "ORTHO",
+      "start": {
+        "target_xyz_m": [
+          2720,
+          1740,
+          0
+        ],
+        "azimuth_deg": -35,
+        "elevation_deg": 55,
+        "ortho_scale_m": 4700
+      },
+      "end": {
+        "target_xyz_m": [
+          2700,
+          1840,
+          0
+        ],
+        "azimuth_deg": -35,
+        "elevation_deg": 55,
+        "ortho_scale_m": 4900
+      }
+    },
+    "S05-SH14": {
+      "camera_type": "PERSPECTIVE",
+      "lens_mm": 50,
+      "start": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          0
+        ],
+        "distance_m": 2800,
+        "azimuth_deg": -38,
+        "elevation_deg": 43
+      },
+      "end": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          0
+        ],
+        "distance_m": 1200,
+        "azimuth_deg": -38,
+        "elevation_deg": 38
+      }
+    },
+    "S05-SH15": {
+      "camera_type": "ORTHO",
+      "start": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          100
+        ],
+        "azimuth_deg": -40,
+        "elevation_deg": 42,
+        "ortho_scale_m": 1900
+      },
+      "end": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          100
+        ],
+        "azimuth_deg": -40,
+        "elevation_deg": 42,
+        "ortho_scale_m": 1650
+      }
+    },
+    "S05-SH16": {
+      "camera_type": "PERSPECTIVE",
+      "lens_mm": 65,
+      "start": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          70
+        ],
+        "distance_m": 600,
+        "azimuth_deg": -40,
+        "elevation_deg": 30
+      },
+      "end": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          70
+        ],
+        "distance_m": 320,
+        "azimuth_deg": -40,
+        "elevation_deg": 25
+      },
+      "note": "局部BIM构件坐标以实际航站楼子模型为准，不能使用世界坐标随机生成冲突点"
+    },
+    "S07-SH21": {
+      "camera_type": "ORTHO",
+      "start": {
+        "target_xyz_m": [
+          2700,
+          1700,
+          0
+        ],
+        "azimuth_deg": -30,
+        "elevation_deg": 60,
+        "ortho_scale_m": 5100
+      },
+      "end": {
+        "target_xyz_m": [
+          2700,
+          1700,
+          0
+        ],
+        "azimuth_deg": -30,
+        "elevation_deg": 52,
+        "ortho_scale_m": 4750
+      }
+    },
+    "S07-SH22": {
+      "camera_type": "ORTHO",
+      "start": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          0
+        ],
+        "azimuth_deg": -38,
+        "elevation_deg": 40,
+        "ortho_scale_m": 2000
+      },
+      "end": {
+        "target_xyz_m": [
+          2610,
+          2225,
+          0
+        ],
+        "azimuth_deg": -38,
+        "elevation_deg": 40,
+        "ortho_scale_m": 1750
+      }
+    },
+    "S08-SH25": {
+      "camera_type": "ORTHO",
+      "start": {
+        "target_xyz_m": [
+          2700,
+          1750,
+          0
+        ],
+        "azimuth_deg": -34,
+        "elevation_deg": 54,
+        "ortho_scale_m": 4700
+      },
+      "end": {
+        "target_xyz_m": [
+          2700,
+          1750,
+          0
+        ],
+        "azimuth_deg": -34,
+        "elevation_deg": 57,
+        "ortho_scale_m": 5300
+      }
+    }
+  }
+}
